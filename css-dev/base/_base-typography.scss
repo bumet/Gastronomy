@@ -1,0 +1,76 @@
+h1 {
+  display: block;
+  font-family: $benton-sans;
+  font-size: 2em;
+  font-weight: bold;
+  margin-after: 0.67em;
+  margin-before: 0.67em;
+  margin-end: 0;
+  margin-start: 0;
+  font-weight: 400;
+}
+
+h2 {
+  display: block;
+  font-family: $benton-sans;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-after: 0.83em;
+  margin-before: 0.83em;
+  margin-end: 0;
+  margin-start: 0;
+  color: #656565;
+}
+
+h3 {
+  display: block;
+  font-family: $benton-sans;
+  font-size: 1.17em;
+  margin-after: 1em;
+  margin-before: 1em;
+  margin-end: 0;
+  margin-start: 0;
+}
+
+h4 {
+  display: block;
+  font-family: $benton-sans;
+  font-weight: bold;
+  margin-after: 1.33em;
+  margin-before: 1.33em;
+  margin-end: 0;
+  margin-start: 0;
+}
+
+h5 {
+  display: block;
+  font-family: $benton-sans;
+  font-size: .83em;
+  font-weight: bold;
+  margin-after: 1.67em;
+  margin-before: 1.67em;
+  margin-end: 0;
+  margin-start: 0;
+}
+
+h6 {
+  display: block;
+  font-family: $benton-sans;
+  font-size: .67em;
+  font-weight: bold;
+  margin-after: 2.33em;
+  margin-before: 2.33em;
+  margin-end: 0;
+  margin-start: 0;
+}
+
+p, span, a, li {
+  font-family: $benton-sans;
+  font-size: 16px;
+}
+
+h1 span {
+  font-size: 0.9em;
+  color: gray;
+  font-weight: 300;
+}

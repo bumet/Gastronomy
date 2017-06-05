@@ -1,0 +1,91 @@
+/****************************** Subnav ******************************/
+.masthead-container .widget_bu_pages {
+  background: white;
+  background-size: 200%;
+  margin: auto;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(246,185,152,0.5);
+  &:before {
+    @include box-shadow(2px 2px 1px lightgray);
+    display: block;
+    content: "";
+    font-size: 0;
+    width: 1px;
+    height: 124px;
+    position: absolute;
+    left: -3px;
+    bottom: 0;
+  }
+  &:after {
+    @include box-shadow(2px 2px 1px lightgray);
+    display: block;
+    content: "";
+    font-size: 0;
+    width: 1px;
+    height: 124px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  ul {
+    border-bottom: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 20px;
+    border: none;
+    a {
+      color: $primary;
+      text-decoration: none;
+      padding: 10px;
+      &.active {
+        color: $primary;
+        font-weight: bold;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+//graceful degredation - for those without JavaScript enabled
+.sidebar {
+  .widget a, #contentnav li a, .widget_nav_menu li a {
+    color: #444;
+    text-decoration: none;
+    &:hover {
+      color: lightgray;
+    }
+  }
+  #contentnav ul {
+    margin: 10px;
+    border-color: lightgray;
+    li {
+      border-color: lightgray;
+      a {
+        display: block;
+        padding: 10px;
+        background: transparent url("http://www.bu.edu/met/wp-content/themes/flexi-met/images/sprite.png") no-repeat 101% -282px;
+        @include transition(0.2s color ease-in-out);
+        &:hover {
+          color: $primary;
+          background-color: #FCFCFC;
+        }
+        &.active {
+          color: $primary;
+          font-weight: 500;
+          font-family: $benton-sans;
+        }
+      }
+    }
+  }
+}
+
+.sidebarPosts, .sidebarProfiles {
+  clear: none;
+}

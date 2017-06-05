@@ -1,0 +1,87 @@
+@mixin breakpoint($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin box-shadow($value...) {
+  -webkit-box-shadow: $value;
+     -moz-box-shadow: $value;
+          box-shadow: $value;
+}
+
+@mixin clearfix() {
+  overflow: auto;
+  zoom: 1; //for IE6
+}
+
+@mixin transition($options) {
+  -webkit-transition: $options;
+     -moz-transition: $options;
+      -ms-transition: $options;
+       -o-transition: $options;
+          transition: $options;
+}
+
+@mixin linear-gradient($options...) {
+  background: -webkit-linear-gradient($options);
+  background:    -moz-linear-gradient($options);
+  background:         linear-gradient($options);
+}
+
+@mixin transform($options) {
+  -webkit-transform: $options;
+     -moz-transform: $options;
+      -ms-transform: $options;
+          transform: $options;
+}
+
+@mixin font-face($option) {
+  font-family: $option,"Benton",Helvetica,sans-serif;
+}
+
+@mixin column-gap($option) {
+  -webkit-column-gap: $option;
+     -moz-column-gap: $option;
+          column-gap: $option;
+}
+
+@mixin column-count($option) {
+  -webkit-column-count: $option;
+     -moz-column-count: $option;
+          column-count: $option;
+}
+
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+     -moz-appearance: $value;
+          appearance: $value;
+}
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+     -moz-border-radius: $value;
+          border-radius: $value;
+}
+
+@mixin anchor() {
+  content: " ";
+  display: block;
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden;
+}
+
+@mixin site-max-width() {
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint($SM) {
+    max-width: $SM - 64px;
+  }
+  @include breakpoint($MD) {
+    max-width: $MD - 64px;
+  }
+  @include breakpoint($LG) {
+    max-width: $LG - 64px;
+  }
+}

@@ -1,0 +1,426 @@
+.widget.events {
+	background-color: lighten(#2baadf, 33%);
+	max-width: 337.484px;
+	.header {
+		background-color: #2baadf;
+		overflow: auto;
+		h2 {
+			color: white;
+			margin-bottom: 0.25em;
+			font-size: 18px;
+			line-height: 1.6;
+			font-family: $benton-sans;
+			font-weight: 500;
+			display: inline;
+		}
+		.icon {
+			font-style: normal;
+			font-family: "BU-Default-Icons";
+			text-align: center;
+			color: #2baadf;
+			background-color: white;
+			border-radius: 50%;
+			width: 42px;
+			height: 42px;
+			display: inline-block;
+			margin: 10px;
+			line-height: 40px;
+			font-size: 21px;
+			vertical-align: sub;
+		}
+	}
+	.event {
+		border-bottom: 1px dotted #2baadf;
+		a {
+			padding: 0.5em 1em;
+			border-bottom: none;
+			color: #444;
+			display: block;
+			position: relative;
+			font-size: 0.8em;
+			text-decoration: none;
+			span {
+				font-size: 1em;
+			}
+			&:visited, &:hover, &:focus, &:active {
+				color: #444;
+			}
+			&:hover {
+				background-color: transparentize(black, 0.95);
+			}
+			&:after {
+				content: "\25BB";
+				font-family: "BU-Default-Icons";
+				position: absolute;
+				right: 1em;
+				top: 0;
+				bottom: 0;
+				vertical-align: middle;
+				margin: auto;
+				display: block;
+				height: 26px;
+				background: #2baadf;
+				color: white;
+				width: 26px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 24px;
+			}
+		}
+	}
+}
+#text-9 {
+  margin-bottom: 0;
+}
+.widget.events {
+  margin: 10px;
+}
+
+/****************************** CTA Widgets ******************************/
+.sidebar {
+  .widget {
+    clear: both;
+    a {
+      color: white;
+      &:hover, &:visited {
+        color: white;
+      }
+    }
+  }
+}
+
+.cta {
+  margin: 10px;
+  overflow: hidden;
+  .contact {
+    background-color: mix($primary, white, 90%);
+    &:hover {
+      background-color: mix($primary, white, 80%);
+    }
+    a:before {
+      @extend %icon-envelope;
+    }
+  }
+  .faw {
+    background-color: mix(#188cef, white, 50%);
+    &:hover {
+      background-color: mix(#188cef, white, 40%);
+    }
+    a:before {
+      @extend %icon-redirect;
+    }
+  }
+  div div {
+    background: mix(mediumseagreen, white, 75%);
+    a {
+      background: transparent $right-arrow 96% center no-repeat;
+      color: white;
+      margin: 10px 0;
+      padding: 1em 3em 1em 0.75em;
+    }
+    @include transition(background .2s ease-in-out);
+  }
+  a {
+    color: white;
+    display: table;
+    margin: 10px 0;
+    padding: 10px 50px 10px 10px;
+    text-decoration: none;
+    width: 100%;
+    @include border-radius(0.125rem);
+    &:before {
+      font-family: "BU-Default-Icons";
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.5em;
+      width: 40px;
+      padding: 0 10px 0 5px;
+      color: white;
+    }
+    p {
+      margin-bottom: 0;
+      line-height: 1.5em;
+      font-family: $benton-sans;
+      font-size: 0.9em;
+      color: white;
+    }
+    strong {
+      color: white;
+    }
+  }
+}
+
+/****************************** News Widget ******************************/
+.widget-bu-posts {
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  > a {
+    color: black!important;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .widgetTitle {
+    border: none;
+    color: $primary;
+    font-family: $benton-sans;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+  }
+  .post {
+    padding: 10px;
+    @include border-radius(0.125rem);
+    @include transition(0.2s box-shadow ease-in-out);
+    .thumb {
+      max-width: none;
+      width: 150px;
+      margin: 0 10px 0 0;
+    }
+    .headline {
+      margin: auto;
+      font-family: $benton-sans;
+      font-size: 0.9em;
+      a {
+        font-family: $benton-sans;
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .excerpt {
+      line-height: 1.25em;
+      font-size: 14px;
+    }
+  }
+  hr {
+    width: 66.7%;
+    border-top: none;
+    border-color: $primary;
+  }
+}
+
+/****************************** Instagram Widget ******************************/
+.instagram-widget {
+  max-width: 350px;
+  margin: 1em auto;
+  padding: 20px;
+  .widgetTitle {
+    border: none;
+    font-family: $benton-sans;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: #AAA;
+    span {
+      color: $primary;
+      font-size: 0.9em;
+    }
+  }
+  .instagram-frame {
+    background-color: white;
+    @include box-shadow(3px 3px 3px #777);
+    iframe {
+      min-height: 327px;
+    }
+  }
+}
+
+/****************************** BU Sharing Widget ******************************/
+.bu-sharing {
+  margin-top: 40px;
+  .bus-title {
+    font-weight: 500;
+  }
+}
+
+/****************************** Cohorts List ******************************/
+.cohorts-list .bu-list-child-pages div {
+  @extend %col-sm-4;
+  position: relative;
+  text-align: center;
+  line-height: 0;
+  h3 {
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    a {
+      padding: 1.75em 0.5em;
+      line-height: normal;
+      display: block;
+      color: white;
+      font-family: $benton-sans;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}
+
+/****************************** Alumni List ******************************/
+.bubble {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  padding-left: 0.25em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  @include border-radius(50%);
+  color: white;
+  font-weight: bold;
+}
+
+/****************************** Faculty List ******************************/
+.faculty-wrapper {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  h3 {
+    color: #EE7432;
+    border-bottom: 1px solid gainsboro;
+  }
+  li:nth-of-type(2) {
+    img {
+      @include border-radius(50%);
+      width: 150px;
+      height: 150px;
+      float: right;
+      margin: 0 0 10px 10px;
+    }
+  }
+}
+
+/****************************** Course Feed ******************************/
+.course-feed {
+  br {
+    display: none;
+  }
+
+  .bu_collapsible_container {
+    outline: 0!important;
+    >* {
+      outline: 0!important;
+    }
+    .bu_collapsible {
+      font-weight: 400;
+      margin: 0;
+      margin-top: 1em;
+    }
+    .bu_collapsible_section {
+      padding: 5px 10px 5px 20px;
+      background-color: #FEFEFE;
+      border-left: 4px solid lightskyblue;
+      font-style: italic;
+      font-family: $benton-sans;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/****************************** Student Association List ******************************/
+.association {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    border-bottom: 1px solid lightgray;
+    padding: 0.5em;
+    &:first-of-type {
+      border-top: 1px solid lightgray;
+    }
+  }
+}
+
+/****************************** Alumni List ******************************/
+.alumni-list-wrapper {
+  .include-image {
+    display: table;
+    .left, .right {
+      display: table-cell;
+    }
+    .left {
+      vertical-align: middle;
+      padding-right: 1em;
+    }
+    .right {
+      vertical-align: top;
+    }
+  }
+  > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+      line-height: 1.6;
+      &:first-of-type {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &:nth-of-type(2) {
+        color: #AAA;
+        font-family: $benton-sans;
+        font-style: italic;
+      }
+      &:nth-of-type(3) {
+        font-size: 14px;
+        font-family: $benton-sans;
+      }
+    }
+  }
+}
+
+/****************************** FAQs List ******************************/
+.faqs {
+  .bu_collapsible_container {
+    border-bottom: 1px dotted lightgray;
+    &+p {
+      display: none;
+      &+p {
+        display: none;
+      }
+    }
+  }
+
+  .bu_collapsible {
+    font-family: $benton-sans;
+    font-weight: 500;
+    margin-bottom: 0;
+    outline: 0;
+    padding: 10px 30px 10px 10px;
+    @include transition(0.25s background-color ease-in-out);
+    &:hover {
+      background-color: #F7F7F7;
+    }
+    &:after {
+      right: 5px;
+    }
+  }
+  .bu_collapsible_section {
+    padding: 5px 10px 5px 20px;
+    background-color: #FEFEFE;
+    border-left: 4px solid lightskyblue;
+    font-style: italic;
+    p {
+      font-family: $benton-sans;
+      font-weight: 300;
+      margin-bottom: 0;
+      padding: 10px 0;
+    }
+  }
+}
+
+/****************************** 404 Page ******************************/
+.error404 {
+  .wrapper {
+    .content-container {
+      padding: 10px 20px;
+    }
+  }
+}

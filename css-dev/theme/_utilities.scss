@@ -1,0 +1,21 @@
+%align-left, %align-right {
+  max-width: 100%;
+  margin-bottom: 10px;
+  @include breakpoint($XS) {
+    max-width: 50%;
+  }
+}
+
+%align-left {
+  @include breakpoint($XS) {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+}
+
+%align-right {
+  @include breakpoint($XS) {
+    float: right;
+    margin: 0 0 10px 10px;
+  }
+}

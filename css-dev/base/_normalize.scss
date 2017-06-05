@@ -1,0 +1,65 @@
+/****************************** Normalize ******************************/
+body {
+  background: #F4F4F4 url('http://sites.bu.edu/gastronomy/files/2016/06/background.jpg');
+  font-family: $benton-sans;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+h3 a {
+  color: $primary;
+}
+
+p:empty {
+  display: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+#degree:before {
+  @include anchor();
+}
+
+#focus:before {
+  @include anchor();
+}
+
+#core:before {
+  @include anchor();
+}
+
+article[role="main"] h1 {
+  color: $primary;
+}
+
+article a {
+  color: $primary;
+  &:focus, &:hover, &:active, &:visited {
+    color: $primary;
+  }
+}
+
+i {
+  font-family: "BU-Default-Icons";
+  font-style: normal;
+}
+
+a.bu_collapsible {
+  display: block;
+  padding: 0.5em 0;
+}
+
+.sidebar {
+  @extend %col-md-4;
+  @include breakpoint($MD) {
+    padding-left: 0;
+  }
+}
+
+.bannerContainer-windowWidth {
+  @include breakpoint($LGR) {
+    padding: 0;
+  }
+}

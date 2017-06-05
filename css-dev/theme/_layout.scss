@@ -1,0 +1,30 @@
+@import 'layout/footer';
+@import 'layout/navigation';
+@import 'layout/subnav';
+@import 'layout/branding';
+
+.content {
+  background: transparent;
+  @include site-max-width();
+
+  .content-container {
+    background-color: white;
+    @include box-shadow(2px 2px 2px lightgray, -2px 2px 2px lightgray);
+    padding: 0;
+  }
+  .content-container, .bannerContainer {
+    max-width: none;
+    width: auto;
+  }
+}
+
+.masthead {
+  background: transparent;
+  border: none;
+  @include site-max-width();
+}
+
+article[role=main] {
+  padding: 20px;
+  @extend %col-md-8;
+}
