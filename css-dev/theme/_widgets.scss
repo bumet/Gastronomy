@@ -298,6 +298,10 @@
 }
 
 /****************************** Course Feed ******************************/
+
+h4.bu_collapsible {
+	margin-bottom: 1em;
+}
 .course-feed {
   br {
     display: none;
@@ -309,7 +313,6 @@
       outline: 0!important;
     }
     .bu_collapsible {
-      font-weight: 400;
       margin: 0;
       margin-top: 1em;
     }

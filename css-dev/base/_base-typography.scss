@@ -2,15 +2,15 @@ h1 {
   display: block;
   font-family: $benton-sans;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 400;
   margin-after: 0.67em;
   margin-before: 0.67em;
   margin-end: 0;
   margin-start: 0;
-  font-weight: 400;
 }
 
 h2 {
+  color: #656565;
   display: block;
   font-family: $benton-sans;
   font-size: 1.5em;
@@ -19,27 +19,30 @@ h2 {
   margin-before: 0.83em;
   margin-end: 0;
   margin-start: 0;
-  color: #656565;
 }
 
 h3 {
   display: block;
   font-family: $benton-sans;
   font-size: 1.17em;
+  font-weight: bold;
   margin-after: 1em;
   margin-before: 1em;
   margin-end: 0;
   margin-start: 0;
+  margin-bottom: 0;
 }
 
 h4 {
   display: block;
   font-family: $benton-sans;
+  font-size: 1em;
   font-weight: bold;
   margin-after: 1.33em;
   margin-before: 1.33em;
   margin-end: 0;
   margin-start: 0;
+  margin-bottom: 0;
 }
 
 h5 {
@@ -47,10 +50,12 @@ h5 {
   font-family: $benton-sans;
   font-size: .83em;
   font-weight: bold;
+  line-height: 1.6;
   margin-after: 1.67em;
   margin-before: 1.67em;
   margin-end: 0;
   margin-start: 0;
+  margin-bottom: 0;
 }
 
 h6 {
@@ -62,6 +67,7 @@ h6 {
   margin-before: 2.33em;
   margin-end: 0;
   margin-start: 0;
+  margin-bottom: 0;
 }
 
 p, span, a, li {

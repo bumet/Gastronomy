@@ -211,14 +211,14 @@ h1 {
   display: block;
   font-family: "Benton-Sans", Helvetica, sans-serif;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 400;
   margin-after: 0.67em;
   margin-before: 0.67em;
   margin-end: 0;
-  margin-start: 0;
-  font-weight: 400; }
+  margin-start: 0; }
 
 h2 {
+  color: #656565;
   display: block;
   font-family: "Benton-Sans", Helvetica, sans-serif;
   font-size: 1.5em;
@@ -226,36 +226,41 @@ h2 {
   margin-after: 0.83em;
   margin-before: 0.83em;
   margin-end: 0;
-  margin-start: 0;
-  color: #656565; }
+  margin-start: 0; }
 
 h3 {
   display: block;
   font-family: "Benton-Sans", Helvetica, sans-serif;
   font-size: 1.17em;
+  font-weight: bold;
   margin-after: 1em;
   margin-before: 1em;
   margin-end: 0;
-  margin-start: 0; }
+  margin-start: 0;
+  margin-bottom: 0; }
 
 h4 {
   display: block;
   font-family: "Benton-Sans", Helvetica, sans-serif;
+  font-size: 1em;
   font-weight: bold;
   margin-after: 1.33em;
   margin-before: 1.33em;
   margin-end: 0;
-  margin-start: 0; }
+  margin-start: 0;
+  margin-bottom: 0; }
 
 h5 {
   display: block;
   font-family: "Benton-Sans", Helvetica, sans-serif;
   font-size: .83em;
   font-weight: bold;
+  line-height: 1.6;
   margin-after: 1.67em;
   margin-before: 1.67em;
   margin-end: 0;
-  margin-start: 0; }
+  margin-start: 0;
+  margin-bottom: 0; }
 
 h6 {
   display: block;
@@ -265,7 +270,8 @@ h6 {
   margin-after: 2.33em;
   margin-before: 2.33em;
   margin-end: 0;
-  margin-start: 0; }
+  margin-start: 0;
+  margin-bottom: 0; }
 
 p, span, a, li {
   font-family: "Benton-Sans", Helvetica, sans-serif;
@@ -768,6 +774,9 @@ article[role=main] {
   margin: 0 0 10px 10px; }
 
 /****************************** Course Feed ******************************/
+h4.bu_collapsible {
+  margin-bottom: 1em; }
+
 .course-feed br {
   display: none; }
 .course-feed .bu_collapsible_container {
@@ -775,7 +784,6 @@ article[role=main] {
   .course-feed .bu_collapsible_container > * {
     outline: 0 !important; }
   .course-feed .bu_collapsible_container .bu_collapsible {
-    font-weight: 400;
     margin: 0;
     margin-top: 1em; }
   .course-feed .bu_collapsible_container .bu_collapsible_section {
