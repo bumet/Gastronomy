@@ -872,10 +872,12 @@ h4.bu_collapsible {
 /****************************** Post Page ******************************/
 .single-post .meta {
   display: none; }
+
 .single-post .archiveLink {
   color: white; }
-  .single-post .archiveLink:visited {
-    color: white; }
+
+.single-post .archiveLink:visited {
+  color: white; }
 
 .single .archiveLink {
   background: #ED4264;
@@ -884,13 +886,7 @@ h4.bu_collapsible {
   display: block;
   font-weight: 400;
   padding: 15px 0;
-  background: -webkit-linear-gradient(to right, #EE7432, #FFEDBC);
-  background: -moz-linear-gradient(to right, #EE7432, #FFEDBC);
   background: linear-gradient(to right, #EE7432, #FFEDBC);
-  -webkit-transition: background 0.2s ease-in-out;
-  -moz-transition: background 0.2s ease-in-out;
-  -ms-transition: background 0.2s ease-in-out;
-  -o-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out; }
   .single .archiveLink:hover {
     background-position: 99%; }
@@ -929,8 +925,6 @@ h4.bu_collapsible {
       .page-template-news .navigation .nav-links .nav-next a:hover, .page-template-news .navigation .nav-links .nav-previous a:hover {
         background-color: #f29546; }
 .page-template-news .bannerContainer {
-  -webkit-box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
-  -moz-box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
   box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray; }
   @media screen and (min-width: 768px) {
     .page-template-news .bannerContainer {
@@ -967,29 +961,19 @@ h4.bu_collapsible {
       text-align: center; }
       .page-template-news .news-posts .post .thumb img {
         border: 3px solid white;
-        -webkit-border-radius: 0.125rem;
-        -moz-border-radius: 0.125rem;
         border-radius: 0.125rem;
-        -webkit-box-shadow: 2px 2px 2px #777, 2px -2px 2px #777, -2px 2px 2px #777, -2px -2px 2px #777;
-        -moz-box-shadow: 2px 2px 2px #777, 2px -2px 2px #777, -2px 2px 2px #777, -2px -2px 2px #777;
         box-shadow: 2px 2px 2px #777, 2px -2px 2px #777, -2px 2px 2px #777, -2px -2px 2px #777; }
     .page-template-news .news-posts .post .more {
       background-color: #f1882f;
-      -webkit-border-radius: 0.125rem;
-      -moz-border-radius: 0.125rem;
       border-radius: 0.125rem;
       color: white;
       float: right;
       margin: 1em 2em 0 2em;
       padding: 0.5em 2em;
       text-decoration: none;
-      -webkit-transition: 0.25s background ease-in-out;
-      -moz-transition: 0.25s background ease-in-out;
-      -ms-transition: 0.25s background ease-in-out;
-      -o-transition: 0.25s background ease-in-out;
-      transition: 0.25s background ease-in-out; }
+      transition: 0.25s background-color ease-in-out; }
       .page-template-news .news-posts .post .more:visited {
-        color: black; }
+        color: white; }
       .page-template-news .news-posts .post .more:hover {
         background-color: #f29546; }
 

@@ -1,15 +1,12 @@
 /****************************** Post Page ******************************/
-.single-post {
-  .meta {
-    display: none;
-  }
-
-  .archiveLink {
-    color: white;
-    &:visited {
-      color: white;
-    }
-  }
+.single-post .meta {
+  display: none;
+}
+.single-post .archiveLink {
+  color:white;
+}
+.single-post .archiveLink:visited {
+  color: white;
 }
 
 .single .archiveLink {
@@ -19,8 +16,8 @@
   display: block;
   font-weight: 400;
   padding: 15px 0;
-  @include linear-gradient(to right, #EE7432 , #FFEDBC);
-  @include transition(background 0.2s ease-in-out);
+  background: linear-gradient(to right, #EE7432 , #FFEDBC);
+  transition: background 0.2s ease-in-out;
   &:hover {
     background-position:99%;
   }
@@ -96,11 +93,11 @@
     }
   }
   .bannerContainer {
+    box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
     @include breakpoint($SM) {
       background-color: white;
       padding-bottom: 60px;
     }
-    @include box-shadow(2px 2px 2px lightgray, -2px 2px 2px lightgray);
   }
 
   .news-posts {
@@ -141,22 +138,22 @@
         text-align: center;
         img {
           border: 3px solid white;
-          @include border-radius(0.125rem);
-          @include box-shadow(2px 2px 2px #777, 2px -2px 2px #777, -2px 2px 2px #777, -2px -2px 2px #777);
+          border-radius: 0.125rem;
+          box-shadow: 2px 2px 2px #777, 2px -2px 2px #777, -2px 2px 2px #777, -2px -2px 2px #777;
         }
       }
 
       .more {
         background-color: mix($primary, white, 90%);
-        @include border-radius(0.125rem);
+        border-radius: 0.125rem;
         color: white;
         float: right;
         margin: 1em 2em 0 2em;
         padding: 0.5em 2em;
         text-decoration: none;
-        @include transition(0.25s background ease-in-out);
+        transition: 0.25s background-color ease-in-out;
         &:visited {
-          color: black;
+          color: white;
         }
         &:hover {
           background-color: mix($primary, white, 80%);
