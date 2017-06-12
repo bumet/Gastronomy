@@ -4,29 +4,9 @@
   }
 }
 
-@mixin box-shadow($value...) {
-  -webkit-box-shadow: $value;
-     -moz-box-shadow: $value;
-          box-shadow: $value;
-}
-
 @mixin clearfix() {
   overflow: auto;
   zoom: 1; //for IE6
-}
-
-@mixin transition($options) {
-  -webkit-transition: $options;
-     -moz-transition: $options;
-      -ms-transition: $options;
-       -o-transition: $options;
-          transition: $options;
-}
-
-@mixin linear-gradient($options...) {
-  background: -webkit-linear-gradient($options);
-  background:    -moz-linear-gradient($options);
-  background:         linear-gradient($options);
 }
 
 @mixin transform($options) {
@@ -34,10 +14,6 @@
      -moz-transform: $options;
       -ms-transform: $options;
           transform: $options;
-}
-
-@mixin font-face($option) {
-  font-family: $option,"Benton",Helvetica,sans-serif;
 }
 
 @mixin column-gap($option) {
@@ -56,12 +32,6 @@
   -webkit-appearance: $value;
      -moz-appearance: $value;
           appearance: $value;
-}
-
-@mixin border-radius($value) {
-  -webkit-border-radius: $value;
-     -moz-border-radius: $value;
-          border-radius: $value;
 }
 
 @mixin anchor() {

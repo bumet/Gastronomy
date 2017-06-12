@@ -6,16 +6,15 @@
 .content {
   background: transparent;
   @include site-max-width();
-
-  .content-container {
-    background-color: white;
-    @include box-shadow(2px 2px 2px lightgray, -2px 2px 2px lightgray);
-    padding: 0;
-  }
-  .content-container, .bannerContainer {
-    max-width: none;
-    width: auto;
-  }
+}
+.content .content-container {
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
+  padding: 0;
+}
+.content .content-container, .content .bannerContainer {
+  max-width: none;
+  width: auto;
 }
 
 .masthead {

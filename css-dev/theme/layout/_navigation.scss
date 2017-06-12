@@ -1,60 +1,58 @@
 /****************************** Primary Nav ******************************/
 .primaryNav {
-  @include box-shadow(lightgray 0px -3px 2px -2px);
+  box-shadow: lightgray 0px -3px 2px -2px;
   margin: auto;
   text-transform: uppercase;
   text-align: center;
-
-  .navToggle {
-    &.is-open span {
-      background-color: transparent;
-    }
-    span {
-      background: black;
-      &:before, &:after {
-        background: black;
-      }
-    }
-  }
-
-  .searchToggle {
-    color: black;
-  }
-
-  .primaryNav-menu a:hover, .l-sideNav .utilityNav a:hover, .primaryNav-menu li a.active, .primaryNav-menu li a.active_section, .primaryNav-menu li li a:hover, .primaryNav-menu li li a:focus {
-    color: $primary;
-  }
-
-  .primaryNav-menu li {
-    a {
-      font-family: $benton-sans;
-    }
-    ul {
-      display: none;
-    }
-  }
+}
+.primaryNav .navToggle.is-open span {
+  background-color: transparent;
+}
+.primaryNav .navToggle span {
+  background-color: black;
+}
+.primaryNav .navToggle span:before,
+.primaryNav .navToggle span:after {
+  background-color: black;
+}
+.primaryNav .searchToggle {
+  color: black;
+}
+.primaryNav .primaryNav-menu li a {
+  font-family: $benton-sans;
+}
+.primaryNav .primaryNav-menu li ul {
+  display: none;
+}
+.primaryNav .primaryNav-menu a:hover,
+.primaryNav .l-sideNav .utilityNav a:hover,
+.primaryNav .primaryNav-menu li a.active,
+.primaryNav .primaryNav-menu li a.active_section,
+.primaryNav .primaryNav-menu li li a:hover,
+.primaryNav .primaryNav-menu li li a:focus {
+  color: $primary;
 }
 
 /****************************** Searchbar ******************************/
 #quicksearch {
-  @include box-shadow(2px 2px 2px lightgray, -2px 2px 2px lightgray);
   background: white;
+  box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
   margin: auto;
-  .button {
-    background: #C2E59C;
-    @include linear-gradient(to right, $primary, #FFEDBC);
-    background-size: 120%;
-    @include transition(background .2s ease-in-out);
-    &:hover {
-      background-position: 80%;
-    }
-  }
-  .button, #q {
-    @include border-radius(0);
-  }
-  #q {
-    @include breakpoint($SM) {
-      width: 84%;
-    }
+}
+#quickserach .button {
+  background: #C2E59C linear-gradient(to right, $primary, #FFEDBC);
+  background-size: 120%;
+  transition: background-position .2s ease-in-out;
+}
+#quicksearch .button:hover {
+  background-position: 80%;
+}
+#quicksearch .button,
+#quicksearch #q {
+  border-radius: 0;
+}
+#quicksearch #q {
+  @include breakpoint($SM) {
+    width: 84%;
   }
 }

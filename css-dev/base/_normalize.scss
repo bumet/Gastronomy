@@ -1,6 +1,6 @@
 /****************************** Normalize ******************************/
 body {
-  background: #F4F4F4 url('http://sites.bu.edu/gastronomy/files/2016/06/background.jpg');
+  background: #F4F4F4 url("/gastronomy/files/2016/06/background.jpg");
   font-family: $benton-sans;
   font-size: 16px;
   line-height: 1.6em;
@@ -36,9 +36,12 @@ article[role="main"] h1 {
 
 article a {
   color: $primary;
-  &:focus, &:hover, &:active, &:visited {
-    color: $primary;
-  }
+}
+article a:focus,
+article a:hover,
+article a:active,
+article a:visited {
+  color: $primary;
 }
 
 i {

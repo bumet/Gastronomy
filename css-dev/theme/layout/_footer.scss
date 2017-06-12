@@ -1,14 +1,12 @@
 /****************************** Footer ******************************/
-.siteFooter-links {
-  a {
-    font-size: 0.9em;
-    font-weight: 500;
-  }
+.siteFooter-links a {
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 .siteFooter {
   margin-bottom: 0;
-  @include box-shadow(2px 2px 2px lightgray, -2px 2px 2px lightgray);
+  box-shadow: 2px 2px 2px lightgray, -2px 2px 2px lightgray;
   @include breakpoint($SM) {
     max-width: $SM - 64px;
     margin: auto;
@@ -26,30 +24,31 @@
   border: none;
   height: 0;
   padding: 0;
-  .footbar-container {
-    height: 0;
-    padding: 0;
-    .widget {
-      margin: 0;
-    }
-  }
 }
-
-.site-footer-brand + .siteFooter-content {
-  text-align: center;
-  margin-left: 0;
+.footbar .footbar-container {
+  height: 0;
+  padding: 0;
+}
+.footbar .footbar-container .widget {
+  margin: 0;
 }
 
 .site-footer-brand {
   display: block;
   @include breakpoint($SM) {
     display: none;
-    + .siteFooter-content {
-        margin-left: 0;
-        text-align: inherit;
-    }
-    &.has-links-social .siteFooter-social {
-      width: auto;
-    }
+  }
+}
+.site-footer-brand + .siteFooter-content {
+  text-align: center;
+  margin-left: 0;
+  @include breakpoint($SM) {
+    margin-left: 0;
+    text-align: inherit;
+  }
+}
+.site-footer-brand.has-links-social .siteFooter-social {
+  @include breakpoint($SM) {
+    width: auto;
   }
 }
